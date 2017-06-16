@@ -1,2 +1,1 @@
-# entrega4
-Es el repositorrio de la entrega 4 de bases de datos
+Debes subir la carpeta FlaskDB a tu propio repositorio en github, el que sera que modificaras para mantenerlo sincronizado con el servidor.
