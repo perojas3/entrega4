@@ -45,4 +45,25 @@
       "Recive una fecha x y una cidudad y, y retorna los restaurantes en los que se hubo una reserva en dicha fecha y ciudad",
     "query": "SELECT restaurantes.nombre FROM restaurantes,reservas WHERE restaurantes.id_restoran = reservas.id_restoran AND restaurantes.ciudad = y AND reservas.fecha = x;"
   }
+  {
+    "name": "Mensajes de una fecha",
+    "database": "mongo",
+    "description":
+      "Recive una fecha x y retorna los numeros de los que tienen mensajes en esa fechas",
+    "query": "db.colletionprueba.find({fecha:"x"},{}).pretty()"
+  }
+  {
+    "name": "Ultimos k mensajes de un numero",
+    "database": "postgres",
+    "description":
+      "Recive un numero x y un cantidad k, y muestra los ultimos k mensajes enviados por ese numerodb.colletionprueba.find({fecha:"numero"},{}).limit("k").pretty()",
+    "query": "db.colletionprueba.find({fecha:"numero"},{}).limit("k").pretty()"
+  }
+  {
+    "name": "Ultimos k mensajes de un numero",
+    "database": "postgres",
+    "description":
+      "Recive un numero x y un cantidad k, y muestra los ultimos k mensajes enviados por ese numerodb.colletionprueba.find({fecha:"numero"},{}).limit("k").pretty()",
+    "query": "db.colletionprueba.find({fecha:"numero"},{}).limit("k").pretty()"
+  }
 ]
