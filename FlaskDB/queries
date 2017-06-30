@@ -31,4 +31,18 @@
       "Vestibulum vulputate metus at nisl lacinia blandit. Quisque fermentum sagittis mi",
     "query": "myCollection.insert( { \"attribute\": \"value\" } )"
   }
+  {
+    "name": "Obtener hotel",
+    "database": "postgres",
+    "description":
+      "Recive una fecha x y una cidudad y, y retorna los hoteles en los que se hubo un hospedaje en dicha fecha y ciudad",
+    "query": "SELECT Hotel.nombre FROM Hotel,Hospedaje WHERE Hotel.hid=Hospedaje.hid AND Hospedaje.fecha <= x AND Hospedaje.fecha + Hospedaje.dias >= x AND Hotel.cidudad = y;"
+  }
+  {
+    "name": "Obtener restaurant",
+    "database": "postgres",
+    "description":
+      "Recive una fecha x y una cidudad y, y retorna los restaurantes en los que se hubo una reserva en dicha fecha y ciudad",
+    "query": "SELECT restaurantes.nombre FROM restaurantes,reservas WHERE restaurantes.id_restoran = reservas.id_restoran AND restaurantes.ciudad = y AND reservas.fecha = x;"
+  }
 ]
